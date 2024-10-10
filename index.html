@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="logo"><img src="img/Logo bitacora.PNG " height="250"></header>
+    <nav>
+        <a href="#ht">Position</a>
+        <a href="#tex">Display</a>
+        <a href="#img">Nuevas propiedades de css</a>
+        <a href="#enl">Animación</a>
+        <a href="#css">Referencias avanzadas</a>
+        <a href="#pro">Carrera</a>
+
+    </nav>
+
+    <section>
+        <div id="ht" class="encabezado">
+            <h1>Position</h1>
+        </div>
+        <div class="contenido1">
+            <h2>Ideas principales</h2>
+            <div class="texto1">
+                <ul>
+                    <li> position: static; Los elementos HTML se posicionan estáticos de forma predeterminada. Los
+                        elementos posicionados estáticos no se ven afectados por las propiedades top, bottom, left,
+                        right y z-index.</li>
+                    <li> position: relative; Un elemento con position: relative; está posicionado en relación con su
+                        posición normal.
+                    </li>
+                    <li>El posicionamiento relativo desplaza un elemento respecto de su posición original establecida
+                        mediante el posicionamiento normal.
+                    </li>
+                    <li>El desplazamiento de la caja se controla con las propiedades top, bottom, left, right y z-index.
+                        Los demás elementos no ocuparán el espacio que deja el elemento desplazado.
+                    </li>
+                    <li>position; absolute; El posicionamiento absoluto se emplea para establecer de forma exacta la
+                        posición en la que se muestra en la caja de un elemento.</li>
+                    <li>La nueva posición del elemento se indica mediante las propiedades top, bottom, left, right y
+                        z-index. que en este caso depende del posicionamiento del elemento contenedor cuando tiene una
+                        posición diferente a static.</li>
+                    <li>Las propiedades: top, bottom, left y right se utilizan para posicionar el elemento.
+                        Un elemento fijo no deja un espacio en la página donde normalmente se ubicará.</li>
+                    <li>postion: sticky; Se posiciona en función de la posición de desplazamiento del usuario.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenido2">
+            <h2>Apuntes</h2>
+            <div class="texto2">
+                <ul>
+                    <li>Cada posición tiene una función especifica, algunas para se ajustan dependiendo del proyecto.
+                    </li>
+                    <li>Cuando algún elemento está establecido con posición static, puede ser que no se vea afectado por
+                        otros "position"
+                    </li>
+                </ul>
+            </div>
+            <div class="img">
+                <div class="acomodo">
+                    <img src="img/position.png" width="500">
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+
+            <h2>Resumen</h2>
+            <div class="texto3">
+                <p>En resumen podemos establecer que las propiedades position deben tomarse en cuenta, ya que por
+                    defecto algunos elementos ya tienen aplicada la propiedad static, y esta puede afectar al uso de
+                    otras position.</p>
+            </div>
+            <a href="#top" class="volver">Volver arriba</a>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="tex" class="encabezado">
+            <h1>Display</h1>
+        </div>
+        <div class="contenido1">
+            <h2>Ideas principales</h2>
+            <div class="texto1">
+                <ul>
+                    <li> Propiedad display: block; Siempre comienza en una nueva línea y ocupa todo el ancho
+                        disponible (se extiende hacia la izquierda y hacia la derecha tanto como sea posible).</li>
+                    <li>Propiedad display: inline; Un elemento inline no comienza en una nueva línea y solo ocupa el
+                        ancho que sea necesario. Ej: span a img
+                    </li>
+                    <li>
+                        Propiedad display: inline-block; Permite establecer un ancho y una altura en el elemento.
+                        Además, se respetan los margin y padding, que con display: inline no son respetados. No agrega
+                        un salto de línea después del elemento, por lo que el elemento puede alinearse junto a otros
+                        elementos.
+                    </li>
+                    <li>
+                        Propiedad display: none; Se usa comúnmente en JavaScript para ocultar y mostrar elementos cuando
+                        el usuario realiza alguna acción como pulsar un botón o un enlaces sin eliminarlos ni crearlos
+                        nuevamente. Hace que el elemento no genere ninguna caja. El resultado es que el elemento
+                        desaparece por completo de la pagina y no ocupa sitio, por lo que los elementos adyacentes
+                        ocupan su lugar.
+                    </li>
+                    <li>Propiedad display: table; Permite asignar un comportamiento de tabla a los elementos que hay
+                        dentro (anidados a la etiqueta donde estas colocando el display: table). Dentro de este elemento
+                        de pueden usar otra series de valores de display que corresponden con los roles de distintas
+                        etiquetas HTML que usas en las tablas.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenido2">
+            <h2>Apuntes</h2>
+            <div class="texto2">
+                <ul>
+                    <li>El mejor para utilizar es el display inline-block, permite controlar ancho y alto, además
+                        respeta paddings y margin.
+                    </li>
+                    <li>Se puede usar el display none, para hacer elementos desplegables que no ocupan espacio hasta que
+                        el usuario lleva acabo alguna acción.
+                    </li>
+                    <li>El display table permite insertar tablas a los elementos anidados para organizar información.
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="img">
+                <div class="acomodo">
+                    <img src="img/display.webp" height="310">
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <h2>Resumen</h2>
+            <div class="texto3">
+                <p>En resumen, las propiedades display permiten organizar y enlistar los elementos de una página web de
+                    diferentes maneras, así como insertar tablas y ocultar elementos desplegables mediante acciones o
+                    botones.</p>
+            </div>
+            <a href="#top" class="volver">Volver arriba</a>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="img" class="encabezado">
+            <h1>Nuevas propiedades de CSS</h1>
+        </div>
+        <div class="contenido1">
+            <h2>Ideas principales</h2>
+            <div class="texto1">
+                <p>Las propiedades nuevas de Css son:</p>
+                <ul>
+                    <li>Transform, que modifica la forma de un elemento con scale, rotate, skew y translate.</li>
+                    <li>Border image, que crea un borde personalizado alrededor de las imagenes.</li>
+                    <li>Outline, que crea un borde alejado del borde original de un elemento.</li>
+                    <li>HSLA, son los valores tono, saturacion y luminosidad, aunado al valor A, que es el canal Alfa
+                        que le agrega opacidad.</li>
+                    <li>Radial gradient, que aplica un gradiente Radial, se le aplica color, circle y ellipse.</li>
+                    <li>Linear gradient, aplica un gradiente lineal, se le aplica un color solido al fondo, los
+                        atributos indican el punto inicial y los colores usados.</li>
+                    <li>@font-face, esta regla permite usar cualquier fuente que necesitemos, declarandola en css y
+                        despues asignandole nombre a la fuente.</li>
+                    <li>Box-shadow, esta propiedad le da sombra a las cajas, tiene 5 parametros, desplazamiento vertical
+                        y horizontal, color, difuminación e inset.</li>
+                    <li>Border-radius, redondea las esquinas de las cajas.</li>
+                    <li>Text-shadow, le adjunta una sombra personalizable a los elementos, tiene 4 parametros, color,
+                        desplazamiento horizontal y vertical y el valor de difuminación.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenido2">
+            <h2>Apuntes</h2>
+            <div class="texto2">
+                <ul>
+                    <li>Hay que tener en cuenta el orden de los atributos a modificar en los gradient.
+                    </li>
+                    <li>Se añaden nuevas funciones que tal vez no todos los navegadores soporten, tal vez tiene que
+                        tener un plan b en caso de que no sea soportado.</li>
+                    <li>Se tiene que tener en cuenta todos los factores para usar correctamente las nuevas propiedades.
+                    </li>
+                </ul>
+            </div>
+            <div class="img">
+                <div class="acomodo">
+                    <img src="img/bordes.jpeg" width="500">
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <h2>Resumen</h2>
+            <div class="texto3">
+                <p>Las funciones de Css se expanden mucho y dejan más a la imaginación, se extienden en sombras y
+                    estilos nuevos.</p>
+            </div>
+            <a href="#top" class="volver">Volver arriba</a>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div id="enl" class="encabezado">
+            <h1>Animación</h1>
+        </div>
+        <div class="contenido1">
+            <h2>Ideas principales</h2>
+            <div class="texto1">
+                <ul>
+                    <li>Css permite animar la mayoria de elementos en html sin usar JavaScript, con la regla @keyframes.
+                    </li>
+                    <li>su sintaxis es: </li>
+                    <li>@keyframes nombre {
+                        from{background-color:red;
+                        width: 100px;
+                        }
+                        to{background-color: yellow;
+                        width:500px;
+                        }
+                    </li>
+                    <li>Para que una Animación funcione, se debe vincular a un elemento, por ejemplo:</li>
+                    <li> div{
+                        animation-name:anim01;
+                        }
+                    </li>
+                    <li>@keyframes nombre {
+                        from{background-color:red;
+                        width: 100px;</li>
+                    <li>Sus propiedades son: linear, ease, ease-in, ease-out, ease-in-out y cubic-bezier.</li>
+                    <li>Tambien: animation-iteration-count, animation-delay, animation-play-state.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenido2">
+            <h2>Apuntes</h2>
+            <div class="texto2">
+                <ul>
+                    <li>Para poder animar correctamente primero hay que declarar y despues vincularla a un elemento.
+                    </li>
+                    <li>Hay manera de hacer que las animaciones tengan un ciclo definido, o infinito.</li>
+                    <li>Las animaciones hacen distintas acciones segun la que se le adjunte.</li>
+                </ul>
+            </div>
+            <div class="img">
+                <div class="acomodo">
+                    <img src="img/animacion.png" height="300">
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <h2>Resumen</h2>
+            <div class="texto3">
+                <p>Las animaciones son una rama extensa de Css y hay que tener cierto grado previo de conocimiento para
+                    poder aplicarlas correctamente, ya que hay algunos pasos que no se pueden intuir al ser una funcion
+                    nueva.</p>
+            </div>
+            <a href="#top" class="volver">Volver arriba</a>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="css" class="encabezado">
+            <h1>Referencias avanzadas</h1>
+        </div>
+        <div class="contenido1">
+            <h2>Ideas principales</h2>
+            <div class="texto1">
+                <ul>
+                    <li>Este tema trabaja las siguientes pseudo clases: nth-child(), first-child, last-child, only-child
+                        y not(),</li>
+                    <li>nth-child, permite encontrar a un "hijo" especifico.</li>
+                    <li>first-child, referencia solo al primer hijo de todos los que haya.</li>
+                    <li>last-child, referencia solo al ultimo hijo de todos.</li>
+                    <li>only-child, referencia a un elemento siempre y cuando sea el unico hijo disponible.</li>
+                    <li>not(), nos permite declarar una excepción en los hijos, así saltandolos al aplicarselo.</li>
+                    <li>Tambien cuenta con selector de relacion (+), de hermanos adyacentes, selecciona un hermano
+                        inmediato, es decir que está justo después de otro.</li>
+                    <li>Selector de hijos directos (>), que selecciona los elementos que son hijos directos de un
+                        elemento padre. </li>
+                    <li>Selector de atributo - [atributo*="cadena"], selecciona elementos cuyo atributo contiene una
+                        cadena específica. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenido2">
+            <h2>Apuntes</h2>
+            <div class="texto2">
+                <ul>
+                    <li>Con este tipo de pseudo clases el trabajo del programador es mucho más facil y rapido.</li>
+                    <li>Siempre hay que tener en cuenta que pseudo clase estamos usando y no confundirla, porqué tienen
+                        nombres parecidos.</li>
+                    <li>Este tipo de relaciones y selectores permiten manipular de manera más eficaz nuestra página para
+                        personalizarla.</li>
+
+
+                </ul>
+            </div>
+            <div class="img">
+                <div class="acomodo">
+                    <img src="img/referencias.gif" height="310">
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <h2>Resumen</h2>
+            <div class="texto3">
+                <p>Podemos establecer que las relaciones, pseudoclases y selectores, son herramientas muy utiles que
+                    reducen el trabajo y el tiempo empleado por el programador.</p>
+            </div>
+            <a href="#top" class="volver">Volver arriba</a>
+        </div>
+
+    </section>
+
+    <section>
+        <div id="pro" class="encabezado">
+            <h1>Carrera</h1>
+        </div>
+        <div class="contenido1">
+            <h2>Ideas principales</h2>
+            <div class="texto1">
+                <img src="img/ajolotes.jpeg" height="600">
+            </div>
+        </div>
+        <div class="contenido2">
+            <h2>Apuntes</h2>
+            <div class="texto2">
+                <img src="img/papus.jpeg" height="500">
+            </div>
+            <div class="img">
+                <div class="acomodo">
+                    <img src="img/mariana.jpeg" height="310">
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+
+            <h2>Resumen</h2>
+            <div class="texto3">
+                <p>La carrera de aniversario estuvo muy padre, mucha gente llevaba a sus perritos y el ambiente estuvo
+                    padre, rifaron cosas pero no me gané ni unos chicles jajajajaja.</p>
+            </div>
+            <a href="#top" class="volver">Volver arriba</a>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
